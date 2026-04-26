@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda 3D - Filtrado Profesional</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <h1>Catálogo de Impresiones 3D</h1>
+
+    <div class="controles">
+        <input type="text" id="filtro-nombre" placeholder="Buscar pieza...">
+        <select id="filtro-cat">
+            <option value="todos">Todas las Categorías</option>
+            <option value="Figuras">Figuras</option>
+            <option value="Accesorios">Accesorios</option>
+            <option value="Hogar">Hogar</option>
+        </select>
+        <label>Precio Máx: $<span id="val-precio">5000</span>
+            <input type="range" id="filtro-precio" min="0" max="10000" value="5000">
+        </label>
+        <label><input type="checkbox" id="filtro-stock"> Solo en Stock</label>
+    </div>
+
+    <div id="productos-grid" class="container-grid"></div>
+
+    <script src="productos.js"></script>
+</body>
+</html>

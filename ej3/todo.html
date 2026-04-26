@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas - Proyectos</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; padding-top: 50px; }
+        .container { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%; max-width: 400px; }
+        h2 { color: #333; margin-top: 0; }
+        
+        form { display: flex; gap: 10px; margin-bottom: 20px; }
+        input[type="text"] { flex: 1; padding: 10px; border: 2px solid #ddd; border-radius: 6px; outline: none; transition: border-color 0.3s; }
+        input[type="text"]:focus { border-color: #007bff; }
+        
+        button#btn-agregar { padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 6px; cursor: pointer; transition: background 0.3s; }
+        button#btn-agregar:hover { background-color: #0056b3; }
+
+        ul { list-style: none; padding: 0; }
+        li { 
+            background: #fff; border-bottom: 1px solid #eee; padding: 12px; 
+            display: flex; justify-content: space-between; align-items: center;
+            transition: all 0.3s ease; animation: fadeIn 0.3s ease;
+        }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        .completada { text-decoration: line-through; color: #888; background-color: #f9f9f9; }
+        
+        .btn-borrar { background-color: #ff4d4d; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; opacity: 0.7; }
+        .btn-borrar:hover { opacity: 1; }
+
+        .info { margin-top: 20px; font-size: 0.9em; color: #666; border-top: 1px solid #eee; padding-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Mi Lista de Tareas(tocar para marcar realizado)</h2>
+        
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="¿Qué hay que hacer?">
+            <button type="submit" id="btn-agregar">Añadir</button>
+        </form>
+
+        <ul id="todo-list"></ul>
+
+        <div class="info">
+            Tareas pendientes: <span id="contador">0</span>
+        </div>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
