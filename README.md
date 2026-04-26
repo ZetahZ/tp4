@@ -4,7 +4,7 @@
 **Tecnologías:** HTML5, CSS3 (Variables, Grid, Flexbox), JavaScript ES6+ (Fetch API, Async/Await)
 
 ## Descripción del Proyecto
-Este proyecto es una mini-aplicación web que demuestra habilidades de manipulación del DOM, consumo de APIs externas y gestión de lógica.
+Este proyecto es una mini-aplicación web que demuestra habilidades de manipulación del DOM, consumo de APIs externas y gestión de la lógica.
 
 ## Páginas y Funcionalidades
 
