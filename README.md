@@ -32,4 +32,4 @@ Consumo de la **PokéAPI** para mostrar una lista de "Puchamones":
 1. Clonar este repositorio.
 2. Abrir la carpeta raíz en VS Code.
 3. Utilizar la extensión **Live Server** para abrir cualquiera de las páginas `.html`.
-4. Para la búsqueda de Puchamones, escribir al menos 3 caracteres en el buscador
+4. Para la búsqueda de Puchamones, escribir al menos 3 caracteres en el buscador.
