@@ -24,7 +24,7 @@ Aplicación de gestión de tareas (To-Do List) con:
 
 ### 3. Puchadex Dinámica (`api-demo.html`)
 Consumo de la **PokéAPI** para mostrar una lista de "Puchamones":
-- Carga asíncrona de 63 entidades.
+- Carga de 63 entidades.
 - Manejo de estados: "Cargando...", error de red y resultados vacíos.
 - Buscador dinámico con filtrado local (mínimo 3 caracteres).
 
